@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Instrument_Sans } from "next/font/google"
+import { Geist, Geist_Mono, Instrument_Sans, Cinzel, Cormorant_Garamond } from "next/font/google"
 
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
@@ -11,6 +11,17 @@ const fontMono = Geist_Mono({
   variable: "--font-mono",
 })
 
+export const cinzel = Cinzel({
+  subsets: ["latin"],
+  variable: "--font-heading",
+});
+
+export const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  variable: "--font-heading2",
+});
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -20,7 +31,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={cn("antialiased", fontMono.variable, "font-sans", instrumentSans.variable)}
+      className={cn("antialiased", fontMono.variable, "font-sans", instrumentSans.variable, cinzel.variable, cormorant.variable)}
     >
       <body>
         <ThemeProvider>{children}</ThemeProvider>
