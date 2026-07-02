@@ -5,23 +5,24 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { motion } from "framer-motion";
 
-// const images = [
-//   "/gallery/1.jpg",
-//   "/gallery/2.jpg",
-//   "/gallery/3.jpg",
-//   "/gallery/4.jpg",
-//   "/gallery/5.jpg",
-//   "/gallery/6.jpg",
-// ];
-
-
 const images = [
-  "https://images.unsplash.com/photo-1604654894610-df63bc536371",
-  "https://images.unsplash.com/photo-1512496015851-a90fb38ba796",
-  "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f",
-  "https://images.unsplash.com/photo-1524504388940-b1c1722653e1",
-  "https://images.unsplash.com/photo-1517841905240-472988babdf9",
-  "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
+  "/gallery/3.jpg",
+  "/gallery/4.jpg",
+  "/gallery/12.jpg",
+  "/gallery/6.jpg",
+  "/gallery/5.jpg",
+  "/gallery/20.jpg",
+  "/gallery/1.gif",
+  "/gallery/18.jpg",
+  "/gallery/2.jpg",
+  "/gallery/10.jpg",
+  "/gallery/9.jpg",
+  "/brand/tatoo.png",
+  "/gallery/1.jpg",
+  "/gallery/25.jpg",
+  "/gallery/11.jpg",
+  "/gallery/8.jpg",
+  "/gallery/17.jpg",
 ];
 
 export default function Gallery() {

@@ -33,7 +33,7 @@ export default function FAQ() {
             FAQ
           </span>
 
-          <h2 className="mt-6 text-4xl font-bold text-white">
+          <h2 className="mt-6 text-4xl font-bold text-white font-heading">
             Frequently Asked Questions
           </h2>
         </div>
@@ -43,7 +43,7 @@ export default function FAQ() {
             <AccordionItem
               key={faq.q}
               value={faq.q}
-              className="border-yellow-500/10"
+              className="border-brand-gold/10"
             >
               <AccordionTrigger className="text-left text-white">
                 {faq.q}

@@ -18,7 +18,7 @@ export default function About() {
       id="about"
       className="relative overflow-hidden py-28"
     >
-      <div className="absolute right-0 top-0 h-[350px] w-[350px] rounded-full bg-yellow-500/10 blur-[120px]" />
+      <div className="absolute right-0 top-0 h-[350px] w-[350px] rounded-full bg-brand-gold/10 blur-[120px]" />
 
       <div className="container mx-auto px-6">
         <div className="grid items-center gap-20 lg:grid-cols-2">
@@ -31,18 +31,18 @@ export default function About() {
             className="grid grid-cols-2 gap-4"
           >
             <img
-              src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f"
+              src="/brand/braid.png"
               className="h-[450px] rounded-[2rem] object-cover"
             />
 
             <div className="space-y-4 pt-16">
               <img
-                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1"
+                src="/brand/tatoo.png"
                 className="h-[220px] rounded-[2rem] object-cover"
               />
 
               <img
-                src="https://images.unsplash.com/photo-1517841905240-472988babdf9"
+                src="/brand/pedicure.png"
                 className="h-[220px] rounded-[2rem] object-cover"
               />
             </div>
@@ -83,7 +83,7 @@ export default function About() {
                   key={item}
                   className="flex items-center gap-3"
                 >
-                  <div className="rounded-full bg-yellow-500/10 p-2">
+                  <div className="rounded-full bg-brand-gold/10 p-2">
                     <Check className="h-4 w-4 text-brand-gold" />
                   </div>
 

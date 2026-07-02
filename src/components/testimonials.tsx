@@ -39,7 +39,7 @@ export default function Testimonials() {
             Testimonials
           </span>
 
-          <h2 className="mt-6 text-4xl font-bold text-white md:text-5xl">
+          <h2 className="mt-6 text-4xl font-bold font-heading text-white md:text-5xl">
             Loved By Queens
           </h2>
         </div>
@@ -54,7 +54,7 @@ export default function Testimonials() {
           <CarouselContent>
             {testimonials.map((testimonial) => (
               <CarouselItem key={testimonial.name}>
-                <div className="rounded-[2rem] border border-yellow-500/10 bg-zinc-950 p-12 text-center">
+                <div className="rounded-[2rem] border border-brand-gold/10 bg-zinc-950 p-12 text-center">
                   <div className="mb-6 flex justify-center gap-1">
                     {Array.from({ length: 5 }).map((_, i) => (
                       <Star

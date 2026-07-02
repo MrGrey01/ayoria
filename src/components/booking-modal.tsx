@@ -12,21 +12,22 @@ import { Input } from "@/components/ui/input";
 interface BookingModalProps{
   size?: "default" | "xs" | "sm" | "lg" | "icon" | "icon-xs" | "icon-sm" | "icon-lg" | null | undefined;
   className?: string;
+  title?: string;
 }
 
-export default function BookingModal({size, className=""}:BookingModalProps) {
+export default function BookingModal({size, title="Book Appointment", className=""}:BookingModalProps) {
   return (
     <Dialog>
       <DialogTrigger asChild>
         <Button
         size={size}
-          className="bg-yellow-500 text-black"
+          className="bg-brand-gold hover:bg-brand-gold/80 text-black font-bold"
         >
-          Book Appointment
+          {title}
         </Button>
       </DialogTrigger>
 
-      <DialogContent className="bg-black border-yellow-500/20">
+      <DialogContent className="bg-black border-brand-gold/20">
         <h2 className="text-2xl font-bold">
           Book Appointment
         </h2>
@@ -41,7 +42,7 @@ export default function BookingModal({size, className=""}:BookingModalProps) {
           <Input type="date" />
         </div>
 
-        <Button className="mt-6 w-full bg-yellow-500 text-black">
+        <Button className="mt-6 w-full bg-brand-gold text-black">
           Submit Booking
         </Button>
       </DialogContent>

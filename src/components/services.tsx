@@ -2,14 +2,23 @@
 
 import { motion } from "framer-motion";
 import { services } from "@/lib/constants";
+import Image from "next/image";
 
 export default function Services() {
   return (
     <section
       id="services"
-      className="bg-zinc-950 py-28"
+      className="relative bg-zinc-950 py-28"
     >
-      <div className="container mx-auto px-6">
+      <Image 
+      src="/brand/spa.png" 
+      alt="spa blurred parallax background" 
+      fill
+      // width={500} height={500} 
+      className="absolute object-cover right-0 top-0 w-full opacity-100 z-10" />
+      <div className="absolute inset-0 z-20 bg-black/50" />
+
+      <div className="relative container mx-auto px-6 z-50">
         <div className="mx-auto max-w-3xl text-center">
           <span className="text-sm uppercase tracking-[0.4em] text-brand-gold">
             Our Services
@@ -36,9 +45,9 @@ export default function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.15 }}
                 viewport={{ once: true }}
-                className="group rounded-[2rem] border border-yellow-500/10 bg-black p-8 transition-all duration-300 hover:-translate-y-3 hover:border-brand-gold"
+                className="group rounded-[2rem] border border-brand-gold/10 bg-black p-8 transition-all duration-300 hover:-translate-y-3 hover:border-brand-gold"
               >
-                <div className="inline-flex rounded-2xl bg-yellow-500/10 p-5">
+                <div className="inline-flex rounded-2xl bg-brand-gold/10 p-5">
                   <Icon className="h-8 w-8 text-brand-gold" />
                 </div>
 

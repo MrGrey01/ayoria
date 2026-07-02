@@ -1,2 +1,4 @@
 https://nailboothng.com/
 https://www.primalnailstudio.com/
+
+git remote set-url origin https://github.com/MrGrey01/ayoria.git

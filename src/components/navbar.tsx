@@ -14,7 +14,7 @@ export default function Navbar() {
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="fixed top-0 z-50 w-full border-b border-yellow-500/10 bg-black/60 backdrop-blur-xl"
+      className="fixed top-0 z-50 w-full border-b border-brand-gold/10 bg-black/60 backdrop-blur-xl"
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-6">
         <Link href="/">
@@ -27,7 +27,7 @@ export default function Navbar() {
             <div className="-ml-2 flex flex-col items-center justify-center">
 <h3 className="text-brand-gold text-4xl font-heading">AYORIA</h3>
 <Separator className="bg-brand-gold"/>
-            <span className="text-[10px] uppercase tracking-wide text-yellow-100">
+            <span className="text-[10px] uppercase tracking-wide text-brand-gold">
               Crafted For Your Crown
             </span>
             </div>
@@ -47,7 +47,7 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden lg:block">
-          <Button className="rounded-full bg-yellow-500 px-8 text-black hover:bg-brand-gold">
+          <Button className="rounded-full bg-brand-gold px-8 text-black hover:bg-brand-gold">
             Book Now
           </Button>
         </div>

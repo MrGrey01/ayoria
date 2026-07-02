@@ -47,7 +47,7 @@ const reasons = [
 export default function WhyChooseUs() {
   return (
     <section className="relative overflow-hidden py-28">
-      <div className="absolute left-0 top-0 h-[400px] w-[400px] rounded-full bg-yellow-500/10 blur-[120px]" />
+      <div className="absolute left-0 top-0 h-[400px] w-[400px] rounded-full bg-brand-gold/10 blur-[120px]" />
 
       <div className="container mx-auto px-6">
         <div className="mx-auto max-w-3xl text-center">
@@ -75,9 +75,9 @@ export default function WhyChooseUs() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="rounded-[2rem] border border-yellow-500/10 bg-zinc-950 p-8"
+                className="rounded-[2rem] border border-brand-gold/10 bg-zinc-950 p-8"
               >
-                <div className="inline-flex rounded-full bg-yellow-500/10 p-4">
+                <div className="inline-flex rounded-full bg-brand-gold/10 p-4">
                   <Icon className="h-7 w-7 text-brand-gold" />
                 </div>
 

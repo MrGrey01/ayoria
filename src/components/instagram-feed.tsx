@@ -3,10 +3,10 @@
 import InstagramIcon from "./icons/instagram";
 
 const posts = [
-  "/instagram/1.jpg",
-  "/instagram/2.jpg",
-  "/instagram/3.jpg",
-  "/instagram/4.jpg",
+  "/brand/cosmetics.png",
+  "/brand/spa.png",
+  "/brand/braid.png",
+  "/brand/studio.png",
 ];
 
 export default function InstagramFeed() {
@@ -19,7 +19,7 @@ export default function InstagramFeed() {
               Instagram
             </p>
 
-            <h2 className="mt-4 text-4xl font-bold">
+            <h2 className="mt-4 text-4xl font-bold font-heading">
               Follow Our Journey
             </h2>
           </div>

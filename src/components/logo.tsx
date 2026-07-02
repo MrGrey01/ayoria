@@ -1,4 +1,6 @@
 import { cn } from "@/lib/utils"
+import { Separator } from "./ui/separator"
+import Link from "next/link"
 
 export const LogoText=()=>{
     return(
@@ -9,6 +11,30 @@ export const LogoText=()=>{
 }
 
 
+export const NavLogo=({
+    fill="currentColor", 
+    className,
+    size=70
+}:LogosProps)=>{
+  return(
+    <Link href="/" className={cn("flex items-center gap-2", className)}>
+          <div className="flex">
+            {/* <span className="text-3xl font-serif tracking-[0.25em] text-brand-gold">
+              AYORIA
+            </span> */}
+            {/* <LogoText/> */}
+            <LogoIcon className="text-brand-gold" size={size}/>
+            <div className="-ml-2 flex flex-col items-center justify-center">
+<h3 className="text-brand-gold text-4xl font-heading">AYORIA</h3>
+<Separator className="bg-brand-gold"/>
+            <span className="text-[10px] uppercase tracking-wide text-brand-gold">
+              Crafted For Your Crown
+            </span>
+            </div>
+          </div>
+        </Link>
+  )
+}
 
 
 // className="font-heading text-brand-gold leading-0.5 tracking-widest"

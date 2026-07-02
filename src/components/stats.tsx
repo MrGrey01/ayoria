@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const stats = [
   {
@@ -23,8 +24,15 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section className="border-y border-yellow-500/10 bg-zinc-950 py-16">
-      <div className="container mx-auto px-6">
+    <section className="relative border-y border-brand-gold/10 bg-zinc-950 py-16">
+       <Image 
+            src="/brand/studio.png" 
+            alt="studio blurred parallax background" 
+            fill
+            // width={500} height={500} 
+            className="absolute object-cover right-0 top-0 w-full opacity-90" />
+            <div className="absolute inset-0 bg-black/50" />
+      <div className="relative container mx-auto px-6">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {stats.map((stat, index) => (
             <motion.div
@@ -33,7 +41,7 @@ export default function Stats() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.15 }}
               viewport={{ once: true }}
-              className="rounded-3xl border border-yellow-500/10 bg-black/40 p-8 text-center backdrop-blur-sm"
+              className="rounded-3xl border border-brand-gold/10 bg-black/40 p-8 text-center backdrop-blur-sm"
             >
               <h3 className="text-5xl font-bold text-brand-gold">
                 {stat.value}

@@ -24,12 +24,12 @@ export default function HomePage() {
       <WhyChooseUs />
       <Gallery />
       <Testimonials />
-       <InstagramFeed />
+      <InstagramFeed />
       <CTA />
       <FAQ />
       <Contact />
       <Footer />
-      <WhatsAppFloat phone="2348012345678"/>
+      <WhatsAppFloat phone="2349115077354"/>
     </main>
   );
 }

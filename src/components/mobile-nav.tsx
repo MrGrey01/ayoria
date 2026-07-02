@@ -23,7 +23,7 @@ export default function MobileNav() {
 
       <SheetContent
         side="right"
-        className="bg-black p-4 border-l border-yellow-600/20"
+        className="bg-black p-4 border-l border-brand-gold/20"
       >
         <div className="my-12 flex flex-col justify-between items-center gap-8">
           {navLinks.map((link) => (
@@ -39,7 +39,7 @@ export default function MobileNav() {
             </SheetClose>
           ))}
 
-          <BookingModal className="mt-4 bg-yellow-500 hover:bg-brand-gold text-black"/>
+          <BookingModal className="mt-4 bg-brand-gold hover:bg-brand-gold text-black"/>
         </div>
       </SheetContent>
     </Sheet>

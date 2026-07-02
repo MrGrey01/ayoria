@@ -23,7 +23,7 @@ export default function Contact() {
     >
       {/* background glow */}
 
-      <div className="absolute right-0 top-0 h-[400px] w-[400px] rounded-full bg-yellow-500/10 blur-[120px]" />
+      <div className="absolute right-0 top-0 h-[400px] w-[400px] rounded-full bg-brand-gold/10 blur-[120px]" />
 
       <div className="container relative mx-auto px-6">
         {/* heading */}
@@ -33,7 +33,7 @@ export default function Contact() {
             Contact Us
           </span>
 
-          <h2 className="mt-6 text-4xl font-bold text-white md:text-5xl">
+          <h2 className="mt-6 text-4xl font-bold text-white md:text-5xl font-heading">
             Let&apos;s Craft Your Crown
           </h2>
 
@@ -52,7 +52,7 @@ export default function Contact() {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <div className="rounded-[2rem] border border-yellow-500/10 bg-zinc-950 p-8">
+            <div className="rounded-[2rem] border border-brand-gold/10 bg-zinc-950 p-8">
               <h3 className="mb-8 text-2xl font-semibold text-white">
                 Contact Information
               </h3>
@@ -61,7 +61,7 @@ export default function Contact() {
                 <ContactItem
                   icon={<Phone />}
                   title="Phone"
-                  value="+234 XXX XXX XXXX"
+                  value="+234 911 507 7354"
                 />
 
                 <ContactItem
@@ -89,7 +89,7 @@ export default function Contact() {
                 <Button
                   size="icon"
                   variant="outline"
-                  className="border-yellow-500/20"
+                  className="border-brand-gold/20"
                 >
                   <Instagram />
                 </Button>
@@ -97,7 +97,7 @@ export default function Contact() {
                 <Button
                   size="icon"
                   variant="outline"
-                  className="border-yellow-500/20"
+                  className="border-brand-gold/20"
                 >
                   <Facebook />
                 </Button>
@@ -111,7 +111,7 @@ export default function Contact() {
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="rounded-[2rem] border border-yellow-500/10 bg-zinc-950 p-8"
+            className="rounded-[2rem] border border-brand-gold/10 bg-zinc-950 p-8"
           >
             <h3 className="mb-8 text-2xl font-semibold text-white">
               Send Us A Message
@@ -120,31 +120,31 @@ export default function Contact() {
             <form className="space-y-6">
               <Input
                 placeholder="Full Name"
-                className="h-14 border-yellow-500/10"
+                className="h-14 border-brand-gold/10"
               />
 
               <Input
                 placeholder="Email Address"
-                className="h-14 border-yellow-500/10"
+                className="h-14 border-brand-gold/10"
               />
 
               <Input
                 placeholder="Phone Number"
-                className="h-14 border-yellow-500/10"
+                className="h-14 border-brand-gold/10"
               />
 
               <Input
                 placeholder="Service Interested In"
-                className="h-14 border-yellow-500/10"
+                className="h-14 border-brand-gold/10"
               />
 
               <Textarea
                 placeholder="Tell us about your beauty goals..."
-                className="min-h-[180px] border-yellow-500/10"
+                className="min-h-[180px] border-brand-gold/10"
               />
 
               <Button
-                className="h-14 w-full bg-yellow-500 text-black hover:bg-brand-gold"
+                className="h-14 w-full bg-brand-gold text-black hover:bg-brand-gold"
               >
                 Send Message
               </Button>
@@ -169,7 +169,7 @@ function ContactItem({
 }: ContactItemProps) {
   return (
     <div className="flex gap-5">
-      <div className="rounded-2xl bg-yellow-500/10 p-4 text-brand-gold">
+      <div className="rounded-2xl bg-brand-gold/10 p-4 text-brand-gold">
         {icon}
       </div>
 
